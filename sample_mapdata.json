@@ -17,32 +17,44 @@
         "modification": ["allowModificationRedistribution", "prohibited", "allowModification"]
       }
     },
-    "sorted": [{
+    "sorted": [
+      {"directory": "LimitedUse","target": {"allowedUserName": ["OnlyAuthor"]}},
+      {"directory": "LimitedUse","target": {"allowRedistribution": ["false"]}},
+      {"directory": "LimitedUse","target": {"commercialUssageName": ["Disallow"]}},
+      {
         "directory": "OpenUse",
         "target": {
-          "allowedUserName": ["OnlyAuthor"],
-          "commercialUssageName": ["Allow"],
-          "sexualUssageName": ["Allow"],
-          "violentUssageName": ["Allow"],
+          "allowedUserName": ["Everyone"],
           "avatarPermission": "everyone",
-          "allowExcessivelyViolentUsage": true,
-          "allowExcessivelySexualUsage": true,
-          "commercialUsage": ["corporation", "personalNonProfit"],
+          "commercialUssageName": ["Allow","Allowed"],
+          "commercialUsage": ["corporation"],
           "creditNotation": ["unnecessary"],
-          "allowRedistribution": [true],
-          "modification": ["allowModification", "allowModificationRedistribution"]
+          "allowRedistribution": [true, "allow"],
+          "modification": ["allowModification", "allowModificationRedistribution"],
+          "sexualUssageName": ["Allow","Allowed"],
+          "violentUssageName": ["Allow","Allowed"],
+          "allowExcessivelyViolentUsage": true,
+          "allowExcessivelySexualUsage": true
+        }
+      }, {
+        "directory": "LimitedUseNoSV",
+        "target": {
+          "sexualUssageName": ["Disallow","Disallowed"],
+          "violentUssageName": ["Disallow","Disallowed"],
+          "allowExcessivelyViolentUsage": false,
+          "allowExcessivelySexualUsage": false
         }
       }, {
         "directory": "LimitedUse",
         "target": {
-          "allowedUserName": ["Everyone"],
-          "commercialUssageName": ["Allow"],
-          "allowRedistribution": [true]
+          "allowRedistribution": [true, "allow"]
         }
       }, {
         "directory": "ReviewRequired",
-        "target": {}
+        "target": {
+        }
       }
+
     ]
   }
 }
