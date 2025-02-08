@@ -1,0 +1,1 @@
+vermin --backport argparse --no-tips list_license.py >vermin_result.txt

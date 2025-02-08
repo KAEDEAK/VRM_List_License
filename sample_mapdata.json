@@ -1,0 +1,48 @@
+{
+  "mapdata": {
+    "unsort": {
+      "target": {
+        "allowedUserName": ["Everyone", "OnlyAuthor"],
+        "commercialUssageName": ["Disallow", "Allow"],
+        "licenseName": "Other",
+        "sexualUssageName": ["Disallow", "Allow"],
+        "violentUssageName": ["Disallow", "Allow"],
+        "licenseUrl": "https://vrm.dev/licenses/1.0/",
+        "avatarPermission": "everyone",
+        "allowExcessivelyViolentUsage": true,
+        "allowExcessivelySexualUsage": true,
+        "commercialUsage": ["personalNonProfit", "corporation"],
+        "creditNotation": ["unnecessary", "required"],
+        "allowRedistribution": [false, true],
+        "modification": ["allowModificationRedistribution", "prohibited", "allowModification"]
+      }
+    },
+    "sorted": [{
+        "directory": "OpenUse",
+        "target": {
+          "allowedUserName": ["OnlyAuthor"],
+          "commercialUssageName": ["Allow"],
+          "sexualUssageName": ["Allow"],
+          "violentUssageName": ["Allow"],
+          "avatarPermission": "everyone",
+          "allowExcessivelyViolentUsage": true,
+          "allowExcessivelySexualUsage": true,
+          "commercialUsage": ["corporation", "personalNonProfit"],
+          "creditNotation": ["unnecessary"],
+          "allowRedistribution": [true],
+          "modification": ["allowModification", "allowModificationRedistribution"]
+        }
+      }, {
+        "directory": "LimitedUse",
+        "target": {
+          "allowedUserName": ["Everyone"],
+          "commercialUssageName": ["Allow"],
+          "allowRedistribution": [true]
+        }
+      }, {
+        "directory": "ReviewRequired",
+        "target": {}
+      }
+    ]
+  }
+}
